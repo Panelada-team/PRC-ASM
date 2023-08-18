@@ -46,25 +46,26 @@ def assemble_instructions(line):
             
     return binary_instruction
         
-def assemble_code():
-    code = [
-        "LOAD  RA1, EIGHT",
-        "LOAD  RA2, FOUR",
-        "ADD   RA1, RA2",
-        "STORE RA1",
-        "LOG   RA1"
-    ]
-    
+def assemble_code(file_path):
     binary_code = []
-            
-    for line in code:
-        bin_instruction = assemble_instructions(line)
-        binary_code.append(bin_instruction)
+    
+    with open(file_path, "r") as file:
+        for line in file:
+            bin_instruction = assemble_instructions(line)
+            binary_code.append(bin_instruction)
                 
     return binary_code
     
 def main():
-    binary_code = assemble_code()
+    print("#############")
+    print("#           #")
+    print("# <welcome> #")
+    print("#           #")
+    print("#############")
+    
+    cmd = input("insert your command: ")
+    
+    binary_code = assemble_code(cmd)
         
     for i, binary_instruction in enumerate(binary_code):
         print(f"instruction {i + 1}: {binary_instruction}")

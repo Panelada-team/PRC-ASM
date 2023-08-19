@@ -65,10 +65,11 @@ def main():
     
     cmd = input("insert your command: ")
     
-    binary_code = assemble_code(cmd)
+    if cmd == f"assemble {file}":
+        binary_code = assemble_code(file)
         
-    for i, binary_instruction in enumerate(binary_code):
-        print(f"instruction {i + 1}: {binary_instruction}")
+        for i, binary_instruction in enumerate(binary_code):
+            print(f"line {i + 1}: {binary_instruction}")
     
 if __name__ == "__main__":
     main()

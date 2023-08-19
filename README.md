@@ -1,9 +1,8 @@
 # PRC-ASM
-um Assembler para a Programable Redstone Computer(PRC) não modificada
+an Assembler for the unmodified Programmable Redstone Computer (PRC)
 
 # Oque é uma PRC?
-uma PRC é a CPU programavel criada por mim sem fins lucrativos
+a PRC is the programmable CPU created by me non-profit
 
 # Como programar a PRC?
-para programar a PRC, primeiro certifique-se dela não ser modificada
-ja que a arquitetura original, sem modificações, permite o assembler ser preciso
+to program the PRC, first make sure it is not modified since the original architecture, without modifications, allows the assembler to be precise
